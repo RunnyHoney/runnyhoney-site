@@ -1,23 +1,23 @@
 /* ─── neocron city terminal :: runnyhoney ───────────────────────── */
 
 :root {
-  --bg-0:        #07040d;
-  --bg-1:        #0a0612;
-  --bg-panel:    rgba(18, 8, 28, 0.78);
-  --bg-panel-2:  rgba(28, 12, 42, 0.55);
+  --bg-0:        #03080d;
+  --bg-1:        #061018;
+  --bg-panel:    rgba(8, 18, 28, 0.78);
+  --bg-panel-2:  rgba(12, 28, 42, 0.55);
 
-  --neon:        #ff2a6d;
-  --neon-soft:   #ff5b95;
+  --neon:        #05d9e8;
+  --neon-soft:   #7afcff;
 
-  --text:        #efe6ee;
-  --text-dim:    #8a7c8e;
-  --text-muted:  #5a4f5e;
+  --text:        #e6f1f5;
+  --text-dim:    #7c8a92;
+  --text-muted:  #4f5b62;
 
-  --line:        rgba(255, 42, 109, 0.35);
-  --line-soft:   rgba(255, 42, 109, 0.16);
+  --line:        rgba(5, 217, 232, 0.35);
+  --line-soft:   rgba(5, 217, 232, 0.16);
 
-  --glow:        0 0 8px rgba(255, 42, 109, 0.65), 0 0 22px rgba(255, 42, 109, 0.35);
-  --glow-soft:   0 0 6px rgba(255, 42, 109, 0.45);
+  --glow:        0 0 8px rgba(5, 217, 232, 0.65), 0 0 22px rgba(5, 217, 232, 0.35);
+  --glow-soft:   0 0 6px rgba(5, 217, 232, 0.45);
 
   --font-display: 'Major Mono Display', 'VT323', ui-monospace, monospace;
   --font-mono:    'Share Tech Mono', ui-monospace, 'Menlo', monospace;
@@ -43,8 +43,8 @@ html, body {
 body {
   position: relative;
   background:
-    radial-gradient(120% 80% at 50% -10%, rgba(255, 42, 109, 0.18), transparent 60%),
-    radial-gradient(120% 90% at 100% 110%, rgba(255, 42, 109, 0.10), transparent 55%),
+    radial-gradient(120% 80% at 50% -10%, rgba(5, 217, 232, 0.18), transparent 60%),
+    radial-gradient(120% 90% at 100% 110%, rgba(5, 217, 232, 0.10), transparent 55%),
     linear-gradient(180deg, var(--bg-1) 0%, var(--bg-0) 100%);
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   min-height: 100dvh;
@@ -78,8 +78,8 @@ body {
   pointer-events: none;
   z-index: 0;
   background-image:
-    linear-gradient(rgba(255, 42, 109, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 42, 109, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(5, 217, 232, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(5, 217, 232, 0.05) 1px, transparent 1px);
   background-size: 48px 48px, 48px 48px;
   background-position: 0 0, 0 0;
   mask-image: radial-gradient(80% 60% at 50% 40%, #000 50%, transparent 100%);
@@ -90,7 +90,7 @@ body {
   .crt::after {
     content: "";
     position: absolute; inset: 0;
-    background: linear-gradient(180deg, transparent 0%, rgba(255, 42, 109, 0.05) 50%, transparent 100%);
+    background: linear-gradient(180deg, transparent 0%, rgba(5, 217, 232, 0.05) 50%, transparent 100%);
     animation: scan 6s linear infinite;
   }
   @keyframes scan {
@@ -179,7 +179,7 @@ body {
   position: absolute;
   width: 14px; height: 14px;
   border: 2px solid var(--neon);
-  filter: drop-shadow(0 0 4px rgba(255, 42, 109, 0.7));
+  filter: drop-shadow(0 0 4px rgba(5, 217, 232, 0.7));
   pointer-events: none;
 }
 .corner.tl { top: -2px; left: -2px;  border-right: 0; border-bottom: 0; }
@@ -227,8 +227,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--text);
   text-shadow:
-    0 0 6px rgba(239, 230, 238, 0.35),
-    0 0 22px rgba(255, 42, 109, 0.35);
+    0 0 6px rgba(230, 241, 245, 0.35),
+    0 0 22px rgba(5, 217, 232, 0.35);
   position: relative;
   word-break: break-word;
 }
@@ -279,7 +279,7 @@ body {
   letter-spacing: 0.08em;
 }
 .bracket { color: var(--neon); text-shadow: var(--glow-soft); }
-.role { text-shadow: 0 0 4px rgba(239, 230, 238, 0.25); }
+.role { text-shadow: 0 0 4px rgba(230, 241, 245, 0.25); }
 .slash { color: var(--text-muted); margin: 0 6px; }
 
 .bio {
@@ -317,7 +317,7 @@ body {
   position: relative;
   display: block;
   height: 10px;
-  background: rgba(255, 42, 109, 0.08);
+  background: rgba(5, 217, 232, 0.08);
   border: 1px solid var(--line-soft);
   overflow: hidden;
 }
@@ -359,7 +359,7 @@ body {
 
 .link-list a:hover,
 .link-list a:focus-visible {
-  background: rgba(255, 42, 109, 0.08);
+  background: rgba(5, 217, 232, 0.08);
   border-color: var(--line);
   color: var(--neon-soft);
   outline: none;
