@@ -13,12 +13,12 @@
   setInterval(tick, 1000);
 
   const roles = [
-    "NETRUNNER",
-    "CODE SMITH",
+    "JUNIOR DEVELOPER",
+    "WEB DEVELOPER",
+    "RADIO PROGRAMMER",
+    "MASTER CONTROL OP",
     "SIGNAL JOCKEY",
-    "PLAZA RAT",
-    "DATA TINKER",
-    "NIGHT OPERATOR",
+    "NETRUNNER",
   ];
   if (roleEl) {
     let i = 0;
