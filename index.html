@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0612" />
+  <title>RUNNYHONEY // personal terminal</title>
+  <meta name="description" content="Personal site of RUNNYHONEY — résumé, projects, and broadcasts from Neocron City." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="crt" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="grid" aria-hidden="true"></div>
+
+  <header class="hud" role="banner">
+    <div class="hud-row">
+      <span class="hud-tag">// NEOCRON CITY MAINFRAME</span>
+      <span class="hud-sep">::</span>
+      <span class="hud-tag dim">SECTOR 04 / PLAZA</span>
+    </div>
+    <div class="hud-row">
+      <span class="hud-tag warn">CONN <b class="dot"></b> ESTABLISHED</span>
+      <span class="hud-sep">::</span>
+      <span class="hud-tag" id="clock">--:--:--</span>
+    </div>
+  </header>
+
+  <main class="terminal" role="main">
+    <section class="panel hero" aria-labelledby="who">
+      <div class="corner tl"></div><div class="corner tr"></div>
+      <div class="corner bl"></div><div class="corner br"></div>
+
+      <p class="kicker">user_profile.dat <span class="cursor">█</span></p>
+      <h1 id="who" class="glitch" data-text="RUNNYHONEY">RUNNYHONEY</h1>
+      <p class="subline">
+        <span class="bracket">[</span>
+        <span class="role" id="role">NETRUNNER</span>
+        <span class="bracket">]</span>
+        <span class="slash">/</span>
+        <span class="role">BUILDER OF SMALL WEIRD THINGS</span>
+      </p>
+      <p class="bio">
+        Operating out of a back-alley terminal in Plaza Sector 04.
+        Trades in code, late-night ideas, and unlicensed pixels.
+        This node is experimental — expect noise.
+      </p>
+    </section>
+
+    <section class="panel stats" aria-labelledby="stats-h">
+      <div class="corner tl"></div><div class="corner tr"></div>
+      <div class="corner bl"></div><div class="corner br"></div>
+      <h2 id="stats-h" class="panel-title">// CHARACTER.SHEET</h2>
+
+      <ul class="stat-list">
+        <li>
+          <span class="stat-name">INT</span>
+          <span class="bar" style="--v:88"><i></i></span>
+          <span class="stat-val">088</span>
+        </li>
+        <li>
+          <span class="stat-name">DEX</span>
+          <span class="bar" style="--v:72"><i></i></span>
+          <span class="stat-val">072</span>
+        </li>
+        <li>
+          <span class="stat-name">PSI</span>
+          <span class="bar magenta" style="--v:94"><i></i></span>
+          <span class="stat-val">094</span>
+        </li>
+        <li>
+          <span class="stat-name">STR</span>
+          <span class="bar" style="--v:46"><i></i></span>
+          <span class="stat-val">046</span>
+        </li>
+        <li>
+          <span class="stat-name">CON</span>
+          <span class="bar" style="--v:61"><i></i></span>
+          <span class="stat-val">061</span>
+        </li>
+        <li>
+          <span class="stat-name">CAFFEINE</span>
+          <span class="bar warn" style="--v:99"><i></i></span>
+          <span class="stat-val">099</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="panel links" aria-labelledby="links-h">
+      <div class="corner tl"></div><div class="corner tr"></div>
+      <div class="corner bl"></div><div class="corner br"></div>
+      <h2 id="links-h" class="panel-title">// UPLINK.DIRECTORY</h2>
+
+      <ul class="link-list">
+        <li>
+          <a href="https://github.com/RunnyHoney" target="_blank" rel="noopener noreferrer">
+            <span class="prefix">&gt;</span>
+            <span class="key">github</span>
+            <span class="dots"></span>
+            <span class="val">@RunnyHoney</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:lushfund@protonmail.ch">
+            <span class="prefix">&gt;</span>
+            <span class="key">mailbox</span>
+            <span class="dots"></span>
+            <span class="val">lushfund@protonmail.ch</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-noop aria-disabled="true">
+            <span class="prefix">&gt;</span>
+            <span class="key">résumé</span>
+            <span class="dots"></span>
+            <span class="val muted">// UPLOADING — STAND BY</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-noop aria-disabled="true">
+            <span class="prefix">&gt;</span>
+            <span class="key">projects</span>
+            <span class="dots"></span>
+            <span class="val muted">// INDEXING</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="ticker" aria-hidden="true">
+    <div class="ticker-track" id="ticker">
+      <span>SYS // boot sequence complete</span>
+      <span>NET // neocron city mesh nominal</span>
+      <span>WRN // do not feed the synaptic processors</span>
+      <span>LOG // 04:21 — sector 04 brownout, contained</span>
+      <span>SYS // welcome, citizen</span>
+      <span>NET // tunnel to cloudflare-pages: OK</span>
+      <span>WRN // surveillance drones on patrol — smile</span>
+    </div>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
