@@ -1,4 +1,4 @@
-// neocron city :: small client-side fx
+// small client-side fx
 
 (function () {
   const clockEl = document.getElementById("clock");

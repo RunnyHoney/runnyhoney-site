@@ -1,6 +1,6 @@
 # runnyhoney-site
 
-Personal site of **RunnyHoney** — styled as a Neocron City terminal.
+Personal site of **RunnyHoney** — styled as a cyberpunk terminal.
 
 Static HTML / CSS / JS. No build step. Deployed to Cloudflare Pages.
 
